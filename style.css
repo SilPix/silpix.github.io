@@ -1,0 +1,195 @@
+body{
+    padding: 0; margin: 0;
+}
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+.hidden{display: none; visibility: hidden;}
+h1,h2,h3,h4,h5,h6,p,a{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #171717;
+    color: white;
+    font-family: Ebrima, Tahoma, "Palatino Linotype";
+    font-size: 18px;
+}
+.head{
+    text-align: center;
+}
+.head button{
+    font-family: "Pixelify Sans", monospace;
+    font-size: 18px;
+    font-style: bold;
+}
+.box{
+    border: solid 2px #373737;
+    border-radius: 9px;
+    padding: 15px;
+    margin: 15px;
+}
+
+.game-grid{
+    display: inline-grid;
+    column-gap: 10px;
+
+    grid-template-columns: auto auto auto;
+
+    width: 100%; padding: 0 4%;
+}
+.game-grid-m{ display: none; }
+
+.poster-grid{
+    display: inline-grid;
+    column-gap: 10px;
+
+    grid-template-columns: auto auto auto;
+
+    width: 100%; padding: 0 10%;
+}
+.poster-grid-m{ display: none; }
+
+.merch-grid{
+    display: inline-grid;
+    column-gap: 10px;
+
+    grid-template-columns: auto auto auto;
+
+    width: 100%; padding: 0 16%;
+}
+.merch-grid-m{ display: none; }
+
+.contact{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.contact a:hover{
+    text-decoration: none;
+    color: #00E9D3;
+    padding: 3px;
+    transition: all .5s ease;
+}
+.contact li{ display: inline-flex; }
+/*HTML Elements*/
+a{
+    color: #0EF0B2;
+    padding: 1px;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+.content a:hover{
+    text-decoration: none;
+    color: #00E9D3;
+    background-color: rgba(255, 255, 255, .14);
+    margin: 3px;
+    transition: all .5s ease;
+}
+
+button{
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 30px;
+
+    padding: 12px;
+    transition: all .4s ease;
+}
+button:hover{
+    color: #000;
+    background-color: #fff;
+
+    border: 2px solid #fff;
+    border-radius: 30px;
+}
+
+
+@media only screen and (max-width: 600px){
+    .game-grid-m{
+        display: inline-grid;
+        column-gap: 10px;
+
+        grid-template-columns: auto auto auto;
+
+        width: 100%; margin: auto;
+    } .game-grid{ display: none; }
+
+    .poster-grid-m{
+        display: inline-grid;
+        column-gap: 10px;
+
+        grid-template-columns: auto auto auto;
+
+        width: 100%; margin: auto;
+    } .poster-grid{ display: none; }
+
+    .merch-grid-m{
+        display: inline-grid;
+        column-gap: 10px;
+
+        grid-template-columns: auto auto auto;
+
+        width: 100%; margin: auto;
+    } .merch-grid{ display: none; }
+
+    .contact .socials{
+        width: 110%;
+        display: inline-flex;
+        justify-content: space-between;
+    }
+}
+@media only screen and (min-width: 768px){
+    .contact .socials{
+        width: 50%;
+        display: inline-flex;
+        justify-content: space-between;
+    }
+}
+
+@keyframes slidefade{
+    from{
+        opacity: 0;
+        transform: translateY(25vh);
+        visibility: hidden;
+    }
+    to{
+        opacity: 1;
+        transform: none;
+        visibility: visible;
+    }
+}
+
+.fade-in-section{
+    opacity: 0;
+    transform: translateY(40vh);
+    will-change: opacity, visibility;
+}
+
+.is-visible{
+    animation-duration: .4s;
+    animation-name: slidefade;
+    animation-timing-function: linear;
+}
+
+/*
+.fade-in-section{
+    opacity: 0;
+    transform: translateY(30vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out;
+    will-change: opacity, visibility;
+}
+
+.fade-in-section .is-visible{
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+    transition: opacity 0.6s ease-out;
+
+    animation-duration: .6s;
+    animation-name: slidefade;
+    animation-timing-function: linear;
+}
+*/
