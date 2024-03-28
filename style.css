@@ -15,7 +15,7 @@ body{
     color: white;
     font-family: Ebrima, Tahoma, "Palatino Linotype";
     font-size: 18px;
-}
+}p, li{ font-family: 'Rubik', Ebrima, Tahoma, "Palatino Linotype"; }
 .head{
     text-align: center;
 }
@@ -172,24 +172,3 @@ button:hover{
     animation-name: slidefade;
     animation-timing-function: linear;
 }
-
-/*
-.fade-in-section{
-    opacity: 0;
-    transform: translateY(30vh);
-    visibility: hidden;
-    transition: opacity 0.6s ease-out;
-    will-change: opacity, visibility;
-}
-
-.fade-in-section .is-visible{
-    opacity: 1;
-    transform: none;
-    visibility: visible;
-    transition: opacity 0.6s ease-out;
-
-    animation-duration: .6s;
-    animation-name: slidefade;
-    animation-timing-function: linear;
-}
-*/
