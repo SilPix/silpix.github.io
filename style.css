@@ -1,21 +1,15 @@
-body{
-    padding: 0; margin: 0;
-}
-*, *:before, *:after{
-    box-sizing: border-box;
-}
+body{ padding: 0; margin: 0; }
+*, *:before, *:after{ box-sizing: border-box; }
 .hidden{display: none; visibility: hidden;}
-h1,h2,h3,h4,h5,h6,p,a{
-    padding: 0;
-    margin: 0;
-}
+h1,h2,h3,h4,h5,h6,p,a{ padding: 0; margin: 0; }
 
 body{
     background-color: #171717;
     color: white;
-    font-family: Ebrima, Tahoma, "Palatino Linotype";
+    font-family: Inter, Ebrima, Tahoma, "Palatino Linotype";
     font-size: 18px;
 }p, li{ font-family: 'Rubik', Ebrima, Tahoma, "Palatino Linotype"; }
+
 .head{
     text-align: center;
 }
@@ -27,7 +21,7 @@ body{
 .box{
     border: solid 2px #373737;
     border-radius: 9px;
-    padding: 15px;
+    padding: 20px 35px;
     margin: 15px;
 }
 
@@ -40,6 +34,39 @@ body{
     width: 100%; padding: 0 4%;
 }
 .game-grid-m{ display: none; }
+
+.grid-img-1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.grid-img-2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.grid-img-3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.game-grid-img-1{
+    width: 375px; height: 250px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.game-grid-img-2{
+    width: 375px; height: 250px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.game-grid-img-3{
+    width: 375px; height: 250px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
 
 .poster-grid{
     display: inline-grid;
@@ -73,14 +100,17 @@ body{
     transition: all .5s ease;
 }
 .contact li{ display: inline-flex; }
+
+.subtitle { font-size: 16px; color: #999 }
+
 /*HTML Elements*/
-a{
+.default-link{
     color: #0EF0B2;
     padding: 1px;
     text-decoration: none;
     transition: all .5s ease;
 }
-.content a:hover{
+.default-link:hover{
     text-decoration: none;
     color: #00E9D3;
     background-color: rgba(255, 255, 255, .14);
@@ -106,7 +136,14 @@ button:hover{
 }
 
 
+
 @media only screen and (max-width: 600px){
+    .content {
+        margin: 20px;
+    }
+    .box { padding: 20px }
+    .box-p { font-size: 16px; margin-top:10px }
+
     .game-grid-m{
         display: inline-grid;
         column-gap: 10px;
@@ -139,14 +176,58 @@ button:hover{
         display: inline-flex;
         justify-content: space-between;
     }
+
+    .projects-btn{
+        width: 100%;
+        font-size: 12px;
+        text-decoration: none;
+
+        color: #fff;
+        background-color: transparent;
+        border: 2px solid #fff;
+        border-radius: 30px;
+
+        padding: 12px;
+        transition: all .5s ease;
+    }
+    .projects-btn:hover{
+        color: #000;
+        background-color: #fff;
+
+        transition: all .5s ease;
+    }
 }
 @media only screen and (min-width: 768px){
+    .content {
+        margin: 50px;
+    }
+
     .contact .socials{
         width: 50%;
         display: inline-flex;
         justify-content: space-between;
     }
+
+    .projects-btn{
+        text-decoration: none;
+
+        color: #fff;
+        background-color: transparent;
+        border: 2px solid #fff;
+        border-radius: 30px;
+
+        padding: 12px;
+        transition: all .5s ease;
+    }
+    .projects-btn:hover{
+        color: #000;
+        background-color: #fff;
+
+        transition: all .5s ease;
+    }
 }
+
+
 
 @keyframes slidefade{
     from{
@@ -172,3 +253,24 @@ button:hover{
     animation-name: slidefade;
     animation-timing-function: linear;
 }
+
+/*
+.fade-in-section{
+    opacity: 0;
+    transform: translateY(30vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out;
+    will-change: opacity, visibility;
+}
+
+.fade-in-section .is-visible{
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+    transition: opacity 0.6s ease-out;
+
+    animation-duration: .6s;
+    animation-name: slidefade;
+    animation-timing-function: linear;
+}
+*/
