@@ -11,10 +11,11 @@ body{
 }p, li{ font-family: 'Rubik', Ebrima, Tahoma, "Palatino Linotype"; }
 
 .head{
+    width: 25%;
     text-align: center;
 }
 .head button{
-    width: 25%;
+    width: 100%;
     font-family: "Pixelify Sans", monospace;
     font-size: 18px;
     font-style: bold;
