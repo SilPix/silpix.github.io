@@ -12,6 +12,7 @@ body{
 
 .head{
     width: 25%;
+    margin: auto;
     text-align: center;
 }
 .head button{
@@ -19,6 +20,7 @@ body{
     font-family: "Pixelify Sans", monospace;
     font-size: 18px;
     font-style: bold;
+    border-radius: 0px;
 }
 .box{
     border: solid 2px #373737;
