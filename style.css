@@ -141,10 +141,9 @@ button:hover{
 
 footer {
     display: flex;
-    margin: auto;
-    margin-top: 25px;
-    place-content: center;
     width: 100%;
+    margin: 25px auto;
+    place-content: center;
 }
 
 
