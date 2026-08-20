@@ -10,6 +10,14 @@ body{
     font-size: 18px;
 }p, li{ font-family: 'Rubik', Ebrima, Tahoma, "Palatino Linotype"; }
 
+.site-title {
+    margin: 15px;
+    text-align: center;
+    font-family: 'Rubik', 'Josefin Slab';
+    font-size: 35px;
+    font-weight: 500;
+}
+
 .head{
     width: 25%;
     margin: auto;
