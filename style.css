@@ -1,4 +1,4 @@
-body{ padding: 0; margin: 0; }
+body{ padding: 0; margin: 0; width: 100%; }
 *, *:before, *:after{ box-sizing: border-box; }
 .hidden{display: none; visibility: hidden;}
 h1,h2,h3,h4,h5,h6,p,a{ padding: 0; margin: 0; }
@@ -141,6 +141,8 @@ button:hover{
 
 footer {
     display: flex;
+    margin: auto;
+    margin-top: 25px;
     place-content: center;
     width: 100%;
 }
