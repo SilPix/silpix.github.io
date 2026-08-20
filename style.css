@@ -117,9 +117,10 @@ body{
 
 /* Projects Page */
 .proj-img-single {
-    width: 50%;
+    width: 500px;
     margin: auto;
 }
+
 /* HTML Elements */
 .default-link{
     color: #0EF0B2;
