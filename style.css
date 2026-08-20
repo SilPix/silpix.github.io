@@ -115,7 +115,12 @@ body{
 
 .subtitle { font-size: 16px; color: #999 }
 
-/*HTML Elements*/
+/* Projects Page */
+.proj-img-single {
+    width: 50%;
+    margin: auto;
+}
+/* HTML Elements */
 .default-link{
     color: #0EF0B2;
     padding: 1px;
